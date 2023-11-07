@@ -4,6 +4,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import ParaIntro from "@/components/ParaIntro.vue";
 
 import {reactive} from "vue";
+import Destination from "@/components/Destination.vue";
 
 // Datas
 const destinations = reactive([
@@ -50,7 +51,7 @@ const destinations = reactive([
   <h1>Destinations de vacances</h1>
   <ParaIntro>Hello le monde !</ParaIntro>
 
-
+  <destination :dest="{nom:'toto', prix:500}"></destination>
 
   <!--
   <header>
