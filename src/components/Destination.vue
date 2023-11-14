@@ -1,6 +1,6 @@
 <script setup>
 defineProps({
-  dest: {
+  pDest: {
     type: Object,
     required: true
   }
@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   <div>
-    {{ dest.nom }} - {{ dest.prix }} CHF
+    {{ pDest.nom }} - {{ pDest.prix }} CHF
   </div>
 </template>
 

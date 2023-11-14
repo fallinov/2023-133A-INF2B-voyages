@@ -49,9 +49,12 @@ const destinations = reactive([
 
 <template>
   <h1>Destinations de vacances</h1>
-  <ParaIntro>Hello le monde !</ParaIntro>
 
-  <destination :dest="{nom:'toto', prix:500}"></destination>
+  <destination
+      v-for="destPar in destinations"
+      :key="destPar.id"
+      :p-dest="destPar"
+  />
 
   <!--
   <header>
